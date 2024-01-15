@@ -1,0 +1,28 @@
+@import url(./meyers.css);
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid: 1fr 5fr / 1fr 6fr;
+}
+
+.sidebar {
+  background-color: rgb(78, 140, 247);
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.header {
+  background-color: rgb(119, 119, 119);
+  display: grid;
+  grid: 2fr 3fr / 3fr 1fr;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid: repeat(3, 1fr) 2fr / 5fr 2fr;
+  grid-auto-rows: 2fr;
+}
+
