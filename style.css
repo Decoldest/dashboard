@@ -1,7 +1,8 @@
 @import url(./meyers.css);
 
 html {
-  --content-color: #f1f5f9;
+  --content-color: #ecf0f4;
+  --content-text: #334155;
 }
 
 .container {
@@ -43,7 +44,7 @@ html {
 }
 
 .header {
-  background-color: #adffca;
+  background-color: #dff9e8;
   display: grid;
   grid: 2fr 3fr / 5fr 2fr;
   align-items: center;
@@ -104,6 +105,7 @@ html {
   gap: 2%;
   overflow: scroll;
   padding: 2%;
+  background-color: var(--content-color);
   overflow: auto;
 }
 
@@ -111,7 +113,12 @@ html {
   border-radius: 15px;
 }
 
+.content div:not(.small-charts){
+  background-color: white;
+}
+
 .small-charts {
+  height: clamp(100px, 110px, 125px);
   display: flex;
   justify-content: space-between;
 }
@@ -120,36 +127,52 @@ html {
   font-size: 2rem;
 }
 
-.line-chart {
+.content-numbers {
   padding-top: 2%;
   padding-left: 2%;
   gap: 5px;
   width: 30%;
-  background-color: var(--content-color);
   display: flex;
   flex-direction: column;
-  color: #334155;
+  color: var(--content-text);
+}
+
+.line-chart
+
+.line-chart>img {
+  border-radius: 10px;
 }
 
 .recent-activity {
-  background-color: bisque;
-  grid-area: 1 / 2 / 3 / 3;
+  grid-area: 1 / 2 / 4 / 3;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.recent-activity>.activity {
+  flex: 1;
+  border-radius: 0px;
+  border-bottom: solid 0.1rem var(--content-color);
+  font-size: 0.8rem;
+  color: var(--content-text);
+}
+
+.activity p {
+  margin-top: 2%;
 }
 
 .stacked-chart {
-  background-color: rgb(186, 146, 82);
   grid-area: 2 / 1 / 4 / 2 ;
 }
 
 .schedule {
-  background-color: rgb(246, 103, 75);
-  grid-area: 3 / 2 / 5 / 3;
+  grid-area: 4 / 2 / 5 / 3;
 }
 
 .breakdown {
   grid-row: 4;
 }
-
 
 a {
   text-decoration: none;
