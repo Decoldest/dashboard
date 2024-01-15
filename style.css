@@ -63,10 +63,24 @@
 .sidebar>img {
   width: 75%;
   margin-top: 10%;
+  margin-left: 5%;
 }
 
 .sidebar>div {
   display: flex;
   flex-direction: column;
-  margin: 20% 15%;
+  margin: 20% 20%;
+  
+}
+
+.sidebar>div>a {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  gap: 4%;
+}
+
+a {
+  text-decoration: none;
 }
