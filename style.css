@@ -9,8 +9,10 @@
 }
 
 .sidebar {
-  background-color: rgb(78, 140, 247);
+  background-color: rgb(37, 118, 41);
   grid-area: 1 / 1 / 3 / 2;
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr ;
 }
 
 .header {
@@ -24,5 +26,47 @@
   display: grid;
   grid: repeat(3, 1fr) 2fr / 5fr 2fr;
   grid-auto-rows: 2fr;
+  gap: 2%;
+  overflow: scroll;
+  padding: 2%;
 }
 
+.small-charts {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.line-chart {
+  border: solid red 2px;
+  width: 30%;
+}
+
+.recent-activity {
+  background-color: bisque;
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.stacked-chart {
+  background-color: rgb(186, 146, 82);
+  grid-area: 2 / 1 / 4 / 2 ;
+}
+
+.schedule {
+  background-color: rgb(246, 103, 75);
+  grid-area: 3 / 2 / 5 / 3;
+}
+
+.breakdown {
+  grid-row: 4;
+}
+
+.sidebar>img {
+  width: 75%;
+  margin-top: 10%;
+}
+
+.sidebar>div {
+  display: flex;
+  flex-direction: column;
+  margin: 20% 15%;
+}
