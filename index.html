@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="header">
-      <div class="search"><input type="text" placeholder="Search"><button type="submit"><img src="src/search.svg" alt=""></button></div>
+      <div class="search"><input type="text" placeholder="Search"><button type="submit" id="search-button"><img src="src/search.svg" alt=""></button></div>
       <div class="username">
         <img src="src/bell.svg" alt="Notification Icon">
         <img id="user-icon" src="src/user.png" alt="User Icon">
@@ -22,9 +22,9 @@
         <h2>Decoldest</h2>
       </div>
       <div class="header-buttons">
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+        <button type="button">New</button>
+        <button type="button">Upload</button>
+        <button type="button">Share</button>
       </div>
     </div>
     <div class="sidebar">
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="content">
-      Figures
+
       <div class="small-charts">
         <div class="content-numbers"><h4>Sales</h4><h2>1520</h2></div>
         <div class="content-numbers"><h4>Leads</h4><h2>Active</h2></div>
@@ -87,7 +87,45 @@
         </div>
       </div>
       <div class="line-chart"><img src="src/line chart.svg" alt="Line Chart"></div>
-      <div class="schedule"> Schedule</div>
+      <!--Calendar html, css, javascript by Bijan @Medium-->
+      <div class="calendar">
+        <div class="calendar-header">
+          <span class="month-picker" id="month-picker"> May </span>
+          <div class="year-picker" id="year-picker">
+            <span class="year-change" id="pre-year">
+              <pre><</pre>
+            </span>
+            <span id="year">2020 </span>
+            <span class="year-change" id="next-year">
+              <pre>></pre>
+            </span>
+          </div>
+        </div>
+  
+        <div class="calendar-body">
+          <div class="calendar-week-days">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="calendar-days">
+          </div>
+        </div>
+        <div class="calendar-footer">
+        </div>
+        <div class="date-time-formate">
+          <div class="day-text-formate">TODAY</div>
+          <div class="date-time-value">
+            <div class="time-formate">01:41:20</div>
+            <div class="date-formate">03 - march - 2022</div>
+          </div>
+        </div>
+        <div class="month-list"></div>
+      </div>
       <div class="breakdown"><img src="src/pie chart.svg" alt="Pie Chart"></div>
     </div>
   </div>
