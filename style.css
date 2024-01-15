@@ -118,7 +118,8 @@ html {
 }
 
 .content div:not(.small-charts, .calendar-header, .year-picker){
-  background-color: white;
+  background-color: white;  
+  box-shadow: rgba(131, 131, 141, 0.2) 0px 7px 10px 0px;
 }
 
 .small-charts {
